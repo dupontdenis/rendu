@@ -51,7 +51,10 @@ document.getElementById("submit").addEventListener("click", function (e) {
   console.log(change);
 
   document.getElementById("result").innerHTML = change
-    .map((item) => `${item.valeur}€: ${item.quantite}`)
+    .map(
+      (item) =>
+        `${item.valeur > 2 ? "💶" : "🪙"} ${item.valeur}€:  ${item.quantite}`
+    )
     .join("</br>");
 });
 

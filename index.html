@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.mjs" type="module"></script>
+</head>
+
+<body>
+  <form>
+    <div class="mb-3">
+      <label for="amount" class="form-label">Amount</label>
+      <input type="number" min="0" class="form-control" id="amount" aria-describedby="amountHelp"
+        placeholder="Enter amount" value="0">
+    </div>
+    <button type="submit" class="btn btn-primary" id="submit">Calculate</button>
+  </form>
+  <div id="result"></div>
+</body>
+
+</html>
